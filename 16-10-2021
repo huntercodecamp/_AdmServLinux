@@ -1,0 +1,19 @@
+sudo su
+senha
+apt update &&
+apt upgrade -y &&
+apt install apache2 -y &&
+sudo apt openssh-client -y &&
+sudo apt openssh-server -y 
+
+https://github.com/huntercodecamp
+
+sudo nano -w /etc/ssh/ssh_config
+sudo nano -w /etc/ssh/sshd_config
+service apache2 start && 
+service named start 
+
+
+https://ninite.com/
+putty
+l1professor@l1professor
