@@ -3,8 +3,9 @@ senha
 apt update &&
 apt upgrade -y &&
 apt install apache2 -y &&
-sudo apt openssh-client -y &&
-sudo apt openssh-server -y 
+sudo apt install openssh-client -y &&
+sudo apt install openssh-server -y 
+
 
 https://github.com/huntercodecamp
 
