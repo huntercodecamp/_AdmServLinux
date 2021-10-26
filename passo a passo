@@ -1,0 +1,20 @@
+○ baixar debian-11.1.0-amd64-DVD-1.iso
+○ baixar e instalar o virtual box 
+○ criar máquina com 1024 mb 
+○ hd tipo vdi 
+○ 25gb HD 
+○ iniciar 
+○ ir no menu Dispositivos > Discos ópticos > escolher uma imagem de disco 
+○ escolher o debian-11.1.0-amd64-DVD-1.iso
+○ atualizar a lista de repositórios 
+	• sudo nano -w /etc/apt/sources.list
+	• remover a linha que tem cdrom comentando com # no início da linha 
+	• remover o # dos outros links 
+○ salvar 
+○ sair
+○ sudo apt update -y
+○ sudo apt upgrade -y 
+○ aguardar ... 
+○ 
+sudo apt install net-tools bind9 dnsutils isc-dhcp-server openssh-server openssh-client samba -y 
+ 
