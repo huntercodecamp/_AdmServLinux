@@ -4,5 +4,5 @@ zone "l1professor.lan" {
 };
 zone "30.15.168.192.in-addr.arpa" {
         type master;
-        file "/etc/bind/db.30.15.168.192";
+        file "/etc/bind/db.88.0.16.172";
 };
