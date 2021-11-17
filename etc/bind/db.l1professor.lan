@@ -14,17 +14,17 @@ $TTL    604800
 
 @                       IN      NS      l1professor.lan.
 
-@                       IN      A       192.168.15.30
+@                       IN      A       172.16.0.88
 
 @                       IN      AAAA    ::1
 
-mail                    A       192.168.15.30
+mail                    A       172.16.0.88
 
-l1professor.lan.        A       192.168.15.30
-server                  A       192.168.15.30
+l1professor.lan.        A       172.16.0.88
+server                  A       172.16.0.88
 
-virtual                 A       192.168.15.30
+virtual                 A       172.16.0.88
 
-router                  A       192.168.15.30
-gateway                 CNAME   192.168.15.30
-gw                      CNAME   192.168.15.30
+router                  A       172.16.0.88
+gateway                 CNAME   172.16.0.88
+gw                      CNAME   172.16.0.88
