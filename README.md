@@ -24,7 +24,7 @@ link do exemplo2 do site oficial do servidor debian: https://servidordebian.org/
 para conferir se configurou corretamente tente o comando no terminal root# : systemctl restart networking 
 
 se não aparecer nenhum erro está ok. 
-  Obs: em alguns casos é preciso reiniciar para funcionar. 
+Obs: em alguns casos é preciso reiniciar para funcionar. 
 então se como o comando não funcionou reinicie e teste no terminal 
 
 • abra o terminal novamente e digite root#: ip -4 a
