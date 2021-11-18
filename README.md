@@ -64,7 +64,9 @@ Repositório com Configuração de servidor linux
 
 4ª etapa: 
 
-    • Agora para fazer um servidor DNS após fazer baixar os pacotes do bind 
+    • Agora para fazer um servidor DNS após fazer baixar os pacotes do bind.
+        para fazer isso abra o terminal como root
+        root#: 
     
     
     
