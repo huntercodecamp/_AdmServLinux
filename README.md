@@ -40,14 +40,16 @@ então se como o comando não funcionou reinicie e teste no terminal
 • no terminal root execute o comando: 
 
   root#: apt install openssh-server openssh-client -y 
-link do exemplo de configuração da documentação oficial: https://servidordebian.org/pt/buster/config/remote_access/ssh_server
-link do exemplo de configuração no nosso exemplo: https://github.com/huntercodecamp/_AdmServLinux/blob/main/etc/ssh/sshd_config
+  link do exemplo de configuração da documentação oficial: https://servidordebian.org/pt/buster/config/remote_access/ssh_server
+  link do exemplo de configuração no nosso exemplo: https://github.com/huntercodecamp/_AdmServLinux/blob/main/etc/ssh/sshd_config
 
-• no terminal após a instalação e configuação execute o comando como root: 
+•  No terminal após a instalação e configuação execute o comando como root: 
   habilite para iniciar o serviço de ssh junto com o sistema com o comando a seguir:
   root#: systemctl enable ssh
   
 a partir de agora podemos configurar o servidor de um outro servidor remoto ou outro computador.
+
+
 
 
 
