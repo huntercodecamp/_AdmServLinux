@@ -1,53 +1,73 @@
 # _AdmServLinux
 Repositório com Configuração de servidor linux
 
-• Baixar e Instalar Virtual box 
+==========================================================
 
-•  Baixar Debian DVD1 iso;
-•  criar máquina com 1256 mb 
-    ○ hd tipo vdi   
-    ○ 25gb HD 
-    iniciar  VM  e instalar o Debian DVD1 iso
+1ª etapa
 
-• Desligar a VM 
+    • Baixar e Instalar Virtual box 
 
-• Ir para as configurações da VM na parte de rede e mudar para placa em modo bridge depois no menu a baixo avançado abra a lista suspensa e o nomo promíscuo mudar na lista suspensa para permitir tudo.
+    •  Baixar Debian DVD1 iso;
+    •  criar máquina com 1256 mb 
+        ○ hd tipo vdi   
+        ○ 25gb HD 
+        iniciar  VM  e instalar o Debian DVD1 iso
 
-• ligar a VM 
+    • Desligar a VM 
 
-• logar na conta 
+    • Ir para as configurações da VM na parte de rede e mudar para placa em modo bridge depois no menu a baixo avançado abra a lista suspensa e o nomo promíscuo mudar na lista suspensa para permitir tudo.
 
-• abrir terminal e logar como root 
+    • ligar a VM 
+=========================================================
 
-• para configuração de ip estático você deve criar o Arquivo de configuração de rede com nome da interface de rede com extensão .config na pasta /etc/network.interfaces.d/
-ex: sudo nano -w /etc/network/interfaces/enp0s3.config
+2ª etapa: 
 
-link do exemplo1 aqui no repositório: https://github.com/huntercodecamp/_AdmServLinux/blob/main/etc/network/interfaces.d/enp0s3.config
-link do exemplo2 do site oficial do servidor debian: https://servidordebian.org/pt/buster/config/network/static_ip
+    • logar na conta 
 
-para conferir se configurou corretamente tente o comando no terminal root# : systemctl restart networking 
+    • abrir terminal e logar como root 
 
-se não aparecer nenhum erro está ok. 
-Obs: em alguns casos é preciso reiniciar para funcionar. 
-então se como o comando não funcionou reinicie e teste no terminal 
+    • para configuração de ip estático você deve criar o Arquivo de configuração de rede com nome da interface de rede com extensão .config na pasta /etc/network.interfaces.d/
+    ex: sudo nano -w /etc/network/interfaces/enp0s3.config
 
-• abra o terminal novamente e digite root#: ip -4 a
+    link do exemplo1 aqui no repositório: https://github.com/huntercodecamp/_AdmServLinux/blob/main/etc/network/interfaces.d/enp0s3.config
+    link do exemplo2 do site oficial do servidor debian: https://servidordebian.org/pt/buster/config/network/static_ip
 
-• verifique se sua interface de rede foi aceita e se está funcionando.
+    para conferir se configurou corretamente tente o comando no terminal root# : systemctl restart networking 
 
-• agora para a configuração ficar mais fácil dependendo da configuração do servidor é recomendado ser instalado primeiro o servidor ssh para poder acessar remotamente en outra máquina com configurações melhores para se trabalhar vendo a documentação.
+    se não aparecer nenhum erro está ok. 
+    Obs: em alguns casos é preciso reiniciar para funcionar. 
+    então se como o comando não funcionou reinicie e teste no terminal 
 
-• no terminal root execute o comando: 
+    • abra o terminal novamente e digite root#: ip -4 a
 
-  root#: apt install openssh-server openssh-client -y 
-  link do exemplo de configuração da documentação oficial: https://servidordebian.org/pt/buster/config/remote_access/ssh_server
-  link do exemplo de configuração no nosso exemplo: https://github.com/huntercodecamp/_AdmServLinux/blob/main/etc/ssh/sshd_config
+    • verifique se sua interface de rede foi aceita e se está funcionando.
+    
+=========================================================
 
-•  No terminal após a instalação e configuação execute o comando como root: 
-  habilite para iniciar o serviço de ssh junto com o sistema com o comando a seguir:
-  root#: systemctl enable ssh
-  
-a partir de agora podemos configurar o servidor de um outro servidor remoto ou outro computador.
+3ª etapa: 
+
+    • agora para a configuração ficar mais fácil dependendo da configuração do servidor é recomendado ser instalado primeiro o servidor ssh para poder acessar remotamente en outra máquina com configurações melhores para se trabalhar vendo a documentação.
+
+    • no terminal root execute o comando: 
+
+      root#: apt install openssh-server openssh-client -y 
+      link do exemplo de configuração da documentação oficial: https://servidordebian.org/pt/buster/config/remote_access/ssh_server
+      link do exemplo de configuração no nosso exemplo: https://github.com/huntercodecamp/_AdmServLinux/blob/main/etc/ssh/sshd_config
+
+    •  No terminal após a instalação e configuação execute o comando como root: 
+      habilite para iniciar o serviço de ssh junto com o sistema com o comando a seguir:
+      root#: systemctl enable ssh
+
+    OBS: a partir de agora podemos configurar o servidor de um outro servidor remoto, outro computador dentro da rede ou o mesmo computador pelo putty do windows.
+
+=========================================================
+
+4ª etapa: 
+
+    • Agora para fazer um servidor DNS após fazer baixar os pacotes do bind 
+ 
+    
+
 
 
 
