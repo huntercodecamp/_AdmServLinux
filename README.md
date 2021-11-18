@@ -1,7 +1,7 @@
 # _AdmServLinux
 Repositório com Configuração de servidor linux
 
-==========================================================
+
 
 1ª etapa
 
@@ -18,7 +18,7 @@ Repositório com Configuração de servidor linux
     • Ir para as configurações da VM na parte de rede e mudar para placa em modo bridge depois no menu a baixo avançado abra a lista suspensa e o nomo promíscuo mudar na lista suspensa para permitir tudo.
 
     • ligar a VM 
-=========================================================
+
 
 2ª etapa: 
 
@@ -42,7 +42,7 @@ Repositório com Configuração de servidor linux
 
     • verifique se sua interface de rede foi aceita e se está funcionando.
     
-=========================================================
+
 
 3ª etapa: 
 
@@ -60,12 +60,13 @@ Repositório com Configuração de servidor linux
 
     OBS: a partir de agora podemos configurar o servidor de um outro servidor remoto, outro computador dentro da rede ou o mesmo computador pelo putty do windows.
 
-=========================================================
+
 
 4ª etapa: 
 
     • Agora para fazer um servidor DNS após fazer baixar os pacotes do bind 
- 
+    
+    
     
 
 
