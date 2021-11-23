@@ -62,11 +62,39 @@ Repositório com Configuração de servidor linux
 
 
 
-4ª etapa: 
-
-    • Agora para fazer um servidor DNS após fazer baixar os pacotes do bind.
-        para fazer isso abra o terminal como root
-        root#: 
+4ª etapa: Fazer servidor funcionar como cache de DNS serguir a etapa 1,2,3.
+    ex: cache DNS toda a configuração passo a passo: Ex1 site: https://servidordebian.org/pt/buster/intranet/dns/cache
+   
+   •  para fazer isso abra o terminal como root
+    
+        root#: sudo apt install bind9 bind9-doc dnsutils -y
+        após a instalação devemos 
+        
+            configurar o ficheiro: /etc/bind/named.conf.options
+            abra o terminal como root e execute o comando
+            root#: nano -w /etc/bind/named.conf.options
+            Ex daqui: https://github.com/huntercodecamp/_AdmServLinux/blob/main/etc/bind/named.conf.options
+            salvar e sair
+            executar no terminal como root: 
+            root#: named-checkconf
+            
+            OBS: se deu tudo certo nenhum erro irá aparecer no terminal
+            
+            configurar o ficheiro /etc/resolv.conf
+            abra o terminal como root e execute o comando 
+            root#: nano -w /etc/resolv.conf
+            
+            ex daqui: https://github.com/huntercodecamp/_AdmServLinux/blob/main/etc/resolv.conf
+            salvar e sair 
+            executar no terminal como root 
+            root#: systemctl restart bind9
+            
+            para testar agora o servidor deve conseguir entrar o ip de qualquer sitio da internet como o comando nslookup
+            execute no terminal como root
+            root#: nslookup www.debian.org
+            
+            
+        
     
     
     
