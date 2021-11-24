@@ -4,7 +4,7 @@ Repositório com Configuração de servidor linux
 
 
 1ª etapa
-
+    {
     • Baixar e Instalar Virtual box 
 
     •  Baixar Debian DVD1 iso;
@@ -19,7 +19,7 @@ Repositório com Configuração de servidor linux
 
     • ligar a VM 
 
-
+    }
 2ª etapa: 
 
     • logar na conta 
