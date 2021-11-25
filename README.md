@@ -23,7 +23,9 @@ Repositório com Configuração de servidor linux
     
 2ª etapa:
     edite o arquivo /etc/apt/sources.list
+    
     para editar abra o terminal como root#: 
+    
     root#: nano -w /etc/apt/sources.list
     
         deb http://deb.debian.org/debian bullseye main
