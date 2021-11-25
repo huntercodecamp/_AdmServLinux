@@ -22,23 +22,22 @@ Repositório com Configuração de servidor linux
 
     
 2ª etapa:
-    edite o arquivo /etc/apt/sources.list
+edite o arquivo /etc/apt/sources.list   
+para editar abra o terminal como root#: 
+root#: nano -w /etc/apt/sources.list
     
-    para editar abra o terminal como root#: 
-    
-    root#: nano -w /etc/apt/sources.list
-    
-        deb http://deb.debian.org/debian bullseye main
-        deb-src http://deb.debian.org/debian bullseye main
+    deb http://deb.debian.org/debian bullseye main
+    deb-src http://deb.debian.org/debian bullseye main
 
-        deb http://deb.debian.org/debian-security/ bullseye-security main
-        deb-src http://deb.debian.org/debian-security/ bullseye-security main
+    deb http://deb.debian.org/debian-security/ bullseye-security main
+    deb-src http://deb.debian.org/debian-security/ bullseye-security main
 
-        deb http://deb.debian.org/debian bullseye-updates main
-        deb-src http://deb.debian.org/debian bullseye-updates main
+    deb http://deb.debian.org/debian bullseye-updates main
+    deb-src http://deb.debian.org/debian bullseye-updates main
     
-    salvar e sair
-    abra o terminal como root e digite o comando 
+salvar e sair
+abra o terminal como root e digite o comando 
+    
     root#: apt update -y && apt upgrade -y
     
     
