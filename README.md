@@ -5,20 +5,19 @@ Repositório com Configuração de servidor linux
 
 1ª etapa
 
-    
-    • Baixar e Instalar Virtual box 
+• Baixar e Instalar Virtual box 
 
-    •  Baixar Debian DVD1 iso;
-    •  criar máquina com 1256 mb 
-        ○ hd tipo vdi   
-        ○ 25gb HD 
-        iniciar  VM  e instalar o Debian DVD1 iso
+•  Baixar Debian DVD1 iso;
+•  criar máquina com 1256 mb 
+    ○ hd tipo vdi   
+    ○ 25gb HD 
+    iniciar  VM  e instalar o Debian DVD1 iso
 
-    • Desligar a VM 
+• Desligar a VM 
 
-    • Ir para as configurações da VM na parte de rede e mudar para placa em modo bridge depois no menu a baixo avançado abra a lista suspensa e o nomo promíscuo mudar na lista suspensa para permitir tudo.
+• Ir para as configurações da VM na parte de rede e mudar para placa em modo bridge depois no menu a baixo avançado abra a lista suspensa e o nomo promíscuo mudar na lista suspensa para permitir tudo.
 
-    • ligar a VM 
+• ligar a VM 
 
     
 2ª etapa:
