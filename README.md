@@ -36,6 +36,7 @@ root#: nano -w /etc/apt/sources.list
     deb-src http://deb.debian.org/debian bullseye-updates main
     
 salvar e sair
+
 abra o terminal como root e digite o comando 
     
     root#: apt update -y && apt upgrade -y
@@ -43,21 +44,27 @@ abra o terminal como root e digite o comando
     
 3ª etapa: 
 
-    • logar na conta 
+• logar na conta 
 
-    • abrir terminal e logar como root 
-    
-    • para configuração de ip estático você deve criar o Arquivo de configuração de rede com nome da interface de rede com extensão .config na pasta /etc/network.interfaces.d/
-    ex: sudo nano -w /etc/network/interfaces/enp0s3.config
+• abrir terminal e logar como root 
 
-    link do exemplo1 aqui no repositório: https://github.com/huntercodecamp/_AdmServLinux/blob/main/etc/network/interfaces.d/enp0s3.config
-    link do exemplo2 do site oficial do servidor debian: https://servidordebian.org/pt/buster/config/network/static_ip
+• para configuração de ip estático você deve criar o Arquivo de configuração de rede com nome da interface de rede com extensão .config na pasta /etc/network.interfaces.d/
+ex: sudo nano -w /etc/network/interfaces/enp0s3.config
 
-    para conferir se configurou corretamente tente o comando no terminal root# : systemctl restart networking 
+link do exemplo1 aqui no repositório: https://github.com/huntercodecamp/_AdmServLinux/blob/main/etc/network/interfaces.d/enp0s3.config
+link do exemplo2 do site oficial do servidor debian: https://servidordebian.org/pt/buster/config/network/static_ip
 
-    se não aparecer nenhum erro está ok. 
-    Obs: em alguns casos é preciso reiniciar para funcionar. 
-    então se como o comando não funcionou reinicie e teste no terminal 
+    # Static IP address
+    auto enp0s3
+    iface enp0s3 inet static
+        address 172.16.0.88/16
+        gateway 172.16.0.1
+
+para conferir se configurou corretamente tente o comando no terminal root# : systemctl restart networking 
+
+se não aparecer nenhum erro está ok. 
+Obs: em alguns casos é preciso reiniciar para funcionar. 
+então se como o comando não funcionou reinicie e teste no terminal 
 
     • abra o terminal novamente e digite root#: ip -4 a
 
