@@ -21,13 +21,27 @@ Repositório com Configuração de servidor linux
     • ligar a VM 
 
     
+2ª etapa:
+    edite o arquivo /etc/apt/sources.list
+    para editar abra o terminal como root#: 
+    root#: nano -w /etc/apt/sources.list
     
-2ª etapa: 
+        deb http://deb.debian.org/debian bullseye main
+        deb-src http://deb.debian.org/debian bullseye main
+
+        deb http://deb.debian.org/debian-security/ bullseye-security main
+        deb-src http://deb.debian.org/debian-security/ bullseye-security main
+
+        deb http://deb.debian.org/debian bullseye-updates main
+        deb-src http://deb.debian.org/debian bullseye-updates main
+    
+    
+3ª etapa: 
 
     • logar na conta 
 
     • abrir terminal e logar como root 
-
+    
     • para configuração de ip estático você deve criar o Arquivo de configuração de rede com nome da interface de rede com extensão .config na pasta /etc/network.interfaces.d/
     ex: sudo nano -w /etc/network/interfaces/enp0s3.config
 
@@ -46,7 +60,7 @@ Repositório com Configuração de servidor linux
     
 
 
-3ª etapa: 
+4ª etapa: 
 
     • agora para a configuração ficar mais fácil dependendo da configuração do servidor é recomendado ser instalado primeiro o servidor ssh para poder acessar remotamente en outra máquina com configurações melhores para se trabalhar vendo a documentação.
 
@@ -64,7 +78,7 @@ Repositório com Configuração de servidor linux
 
 
 
-4ª etapa: Fazer servidor funcionar como cache de DNS serguir a etapa 1,2,3.
+5ª etapa: Fazer servidor funcionar como cache de DNS serguir a etapa 1,2,3.
 
     ex: cache DNS toda a configuração passo a passo: Ex1 site: https://servidordebian.org/pt/buster/intranet/dns/cache
    
@@ -97,7 +111,7 @@ Repositório com Configuração de servidor linux
         root#: nslookup www.debian.org
             
             
-    5ª Etapa: para fazer o DNS local da etapa 1 a 4 deve ter sido concluída.
+    6ª Etapa: para fazer o DNS local da etapa 1 a 4 deve ter sido concluída.
     
         Ex o site Oficial de todos os carquivo com passo a passo: https://servidordebian.org/pt/buster/intranet/dns/server
         
