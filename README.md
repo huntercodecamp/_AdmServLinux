@@ -35,6 +35,10 @@ Repositório com Configuração de servidor linux
         deb http://deb.debian.org/debian bullseye-updates main
         deb-src http://deb.debian.org/debian bullseye-updates main
     
+    salvar e sair
+    abra o terminal como root e digite o comando 
+    root#: apt update -y && apt upgrade -y
+    
     
 3ª etapa: 
 
