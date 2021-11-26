@@ -17,7 +17,7 @@ options {
 
 	dnssec-validation auto;
 	auth-nxdomain no;
-	// onde esta 172.16.0.88 é o ip do pc
+	// onde esta 172.16.0.88 é o ip do servidor
 	listen-on { 127.0.0.1; 172.16.0.88; };
 	listen-on-v6 { ::1; };
 	allow-query { "interna"; };
