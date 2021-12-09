@@ -9,5 +9,5 @@ $TTL    604800
                              4W         ; Expire
                              1D )       ; Negative Cache TTL
 ;
-@       IN      NS      ns.
-88      IN      PTR     ns.l1professor.lan.
+@         IN      NS      ns.
+88.0      IN      PTR     ns.l1professor.lan.
