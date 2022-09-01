@@ -1,6 +1,8 @@
 # _AdmServLinux
 Repositório com Configuração de servidor linux
+após clonar autorizar o script .sh 
 
+chmod +x nomedoarquivo
 
 
 1ª etapa
